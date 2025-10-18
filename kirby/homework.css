@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img{
+	max-width: 100%;
+	vertical-align: bottom;
+}
+
+.title{
+	width:200px;
+	margin-inline: auto;
+	margin-bottom: 60px;
+}
+.pic{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.p {
+	flex-basis: 300px;
+
+}
