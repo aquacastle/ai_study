@@ -36,7 +36,7 @@ img{
 			height: auto;
 	}
 }
-@media screen and (max-width: 768px{
+@media screen and (max-width: 768px){
 	width: 250px;
 	height: 80px;
 	font-size: 18px;
