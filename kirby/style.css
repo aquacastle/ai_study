@@ -31,11 +31,23 @@ img {
 			object-fit: cover;
 		}
 
+		@media screen and (max-width: 768px) {
+			margin-bottom: 30px;
+			height: auto;
+		}
+
 	}
 
+	@media screen and (max-width: 768px) {
+		width: 250px;
+		height:80px
+		font-size: 18px;
+		padding: 20px;
+
+	}
 }
 
-.botton-img{
+.botton-img {
 	margin-inline: auto;
 	margin-top: 50px;
 	width: 300px;
@@ -48,17 +60,50 @@ img {
 	border-radius: 8px;
 	/*角*/
 	border: 8px solid white;
-	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) ;
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 	position: relative;
-  padding-top: 25px;
+	padding-top: 25px;
 	text-align: center;
+	text-decoration: none;
+	transition: all 0.25s ease-out;
+	display: block;
 
-	.botton-img-carby{
+	&::before{
+		content: "";
+		display: block;
+		background-image: url("assets/img/historyBtn-deco.png");
+		width: 180px;
+		height: 180px;
+		background-size: contain;
 		position: absolute;
 		top: -60px;
 		left: -150px;
+
 	}
 
 
+	.botton-img-carby {
+		position: absolute;
+		top: -60px;
+		left: -150px;
+		@media screen and (max-width: 768px){
+			width: 90px;
+			top: -10px;
+			left: -60px;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		width: 250px;
+		height: 80px;
+		font-size: 18px;
+		padding-top: 20px;
+
+
+	}
+
 }
 
+.botton-img:hover {
+	opacity: 0.8;
+}

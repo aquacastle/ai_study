@@ -31,8 +31,20 @@ img{
 			height: 100%;
 			object-fit: cover;
 		}
+		@media screen and (max-width: 768px){
+   margin-bottom: 30px;
+			height: auto;
 	}
 }
+@media screen and (max-width: 768px{
+	width: 250px;
+	height: 80px;
+	font-size: 18px;
+	padding: 20px;
+}
+
+}
+
 
 .botton-img{
 	margin-inline: auto;
@@ -50,10 +62,43 @@ img{
 	position: relative;
 	padding-top: 25px;
 	text-align: center;
+	text-decoration: none;
+	transition: all 0.25s ease-out;
+	display: block;
+
+	&::before{
+		content: "";
+		display: block;
+		background-image:url("assets/img/historyBtn-deco.png") ;
+	width: 180px;
+		height:180px ;
+		background-size: contain;
+		position: absolute;
+		top:-60px;
+		left:-150px;
+	}
 
 	.botton-img-carby {
 		position: absolute;
 		top: -60px;
 		left: -150px;
 	}
+	@media screen and (max-width: 768px) {
+		width: 90px;
+		top: -10px;
+		left: -60px;
+
+
+	}
+
+	@media screen and (max-width: 768px) {
+		width: 250px;
+		height: 80px;
+		font-size: 18px;
+		padding-top: 20px;
+
+	}
+.botton-img:hover{
+	opacity: 0.8;
+}
 	}
