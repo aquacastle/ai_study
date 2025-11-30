@@ -1,16 +1,16 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-img{
+img {
 	max-width: 100%;
 	vertical-align: bottom;
 }
 
-.title{
-	width:200px;
+.title {
+	width: 200px;
 	margin-inline: auto;
 	margin-bottom: 60px;
 }
@@ -21,6 +21,12 @@ img{
 	align-items: center;
 	gap: 20px;
 
+	@media screen and (max-width: 768px) {
+		/*width: 250px;*/
+		font-size: 18px;
+		padding: 20px;
+		display: block;
+	}
 
 	p {
 		flex-basis: 300px;
@@ -31,22 +37,18 @@ img{
 			height: 100%;
 			object-fit: cover;
 		}
-		@media screen and (max-width: 768px){
-   margin-bottom: 30px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 30px;
 			height: auto;
+		}
 	}
-}
-@media screen and (max-width: 768px){
-	width: 250px;
-	height: 80px;
-	font-size: 18px;
-	padding: 20px;
-}
+
 
 }
 
 
-.botton-img{
+.botton-img {
 	margin-inline: auto;
 	margin-top: 50px;
 	width: 300px;
@@ -58,7 +60,7 @@ img{
 	margin-inside: auto;
 	border-radius: 8px;
 	border: 8px solid white;
-	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2) ;
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 	position: relative;
 	padding-top: 25px;
 	text-align: center;
@@ -66,16 +68,28 @@ img{
 	transition: all 0.25s ease-out;
 	display: block;
 
-	&::before{
+	@media screen and (max-width: 768px) {
+		margin-top: 24px;
+	}
+
+	&::before {
 		content: "";
 		display: block;
-		background-image:url("assets/img/historyBtn-deco.png") ;
-	width: 180px;
-		height:180px ;
+		background-image: url("assets/img/historyBtn-deco.png");
+		width: 180px;
+		height: 180px;
 		background-size: contain;
 		position: absolute;
-		top:-60px;
-		left:-150px;
+		top: -60px;
+		left: -150px;
+
+		@media screen and (max-width: 768px) {
+			width: 80px;
+			height: 90px;
+			top: -10px;
+			left: -56px;
+		}
+
 	}
 
 	.botton-img-carby {
@@ -83,10 +97,11 @@ img{
 		top: -60px;
 		left: -150px;
 	}
+
 	@media screen and (max-width: 768px) {
 		width: 90px;
-		top: -10px;
-		left: -60px;
+		/*top: -10px;*/
+		/*left: -60px;*/
 
 
 	}
@@ -98,7 +113,8 @@ img{
 		padding-top: 20px;
 
 	}
-.botton-img:hover{
-	opacity: 0.8;
-}
+
+	.botton-img:hover {
+		opacity: 0.8;
 	}
+}
