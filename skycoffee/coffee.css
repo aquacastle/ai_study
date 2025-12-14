@@ -1,16 +1,105 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-img{
+img {
 	max-width: 100%;
 	vertical-align: bottom;
 }
-.title{
-margin-inside: auto;
-width:280px;
+
+.title {
+	margin-inline: auto;
+	width: 280px;
 
 }
 
+.menu{
+	font-family: "Arial", sans-serif;
+	font-weight:400;
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	line-height: calc(29/16);
+	color: black;
+	margin-top: 40px;
+	text-decoration:none;
+}
+
+.menu-item{
+	margin: 40px ;
+}
+
+.concept{
+	margin: 90px 165px 00px 165px;
+
+}
+
+.contents{
+	display:flex;
+	justify-content:center;
+}
+
+.concept-left {
+	width: 555px;
+	height: 547px;
+}
+.concept-right {
+margin-left: 48px;
+}
+.concept-right-title{
+	font-family: "Arial", sans-serif;
+	padding-top: 269px;
+}
+
+.concept-right-green{
+	color: #84cdd7;
+	font-size: 32px;
+	font-weight: 600;
+}
+.concept-right-letter{
+	font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+	font-size: 16px;
+	line-height: calc(29/16);
+}
+
+
+.blog-title-en{
+font-size: 32px;
+	font-weight: 600;
+
+}
+
+.blog-body{
+	display: flex;
+	gap: 30px;
+
+}
+
+
+.thumbnail{
+	aspect-ratio: 35/18;
+	gap: 30px;
+
+	/*background-color: #ca94ff;*/
+}
+
+.common-button{
+	margin-inline: auto;
+	width: 220px;
+	top: 51px;
+	margin-top: 30px;
+	color: #84cdd7;
+	font-size: 15px;
+	background: #ffffff;
+	border: 1px solid #84cdd7;
+	text-decoration: none;
+	text-align: center;
+
+
+}
+
+.thumbnail-title{
+	font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
